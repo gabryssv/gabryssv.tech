@@ -22,112 +22,118 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
             <Card className="bg-secondary/50 border-border hover:shadow-md transition-shadow">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
-                  <Zap className="h-6 w-6 text-foreground" />
-                </div>
-                <h2 className="text-xl font-semibold">Automatyzacje</h2>
-                <p className="text-muted-foreground">
-                  Od ponad 2 lat tworzę <strong>rozwiązania automatyzujące</strong> dla różnych platform, w tym Discord,
-                  Telegram, Instagram i Facebook. Oferuję{" "}
-                  <strong>spersonalizowane rozwiązania w przystępnej cenie</strong>.
-                </p>
-              </CardContent>
+                <CardContent className="p-6 space-y-4">
+                    <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
+                        <Zap className="h-6 w-6 text-foreground"/>
+                    </div>
+                    <h2 className="text-xl font-semibold">Automatyzacje</h2>
+                    <p className="text-muted-foreground">
+                        Od ponad 2 lat tworzę <strong>rozwiązania automatyzujące</strong> dla różnych platform, w tym
+                        Discord,
+                        Telegram, Instagram i Facebook. Oferuję{" "}
+                        <strong>spersonalizowane rozwiązania w przystępnej cenie</strong>.
+                    </p>
+                    <div className="flex flex-wrap gap-3">
+                        <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                            <Link href="#">Boty Discord</Link>
+                        </Button>
+
+                        <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                            <Link href="#">Boty Telegram</Link>
+                        </Button>
+
+                        <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                            <Link href="#">Automatyzacje Instagram</Link>
+                        </Button>
+
+                        <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                            <Link href="#">Automatyzacje Facebook</Link>
+                        </Button>
+                    </div>
+                </CardContent>
             </Card>
 
-            <Card className="bg-secondary/50 border-border hover:shadow-md transition-shadow">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
-                  <Palette className="h-6 w-6 text-foreground" />
-                </div>
-                <h2 className="text-xl font-semibold">Grafika Komputerowa</h2>
-                <p className="text-muted-foreground">
-                  Od prawie 5 lat zajmuję się <strong>grafiką komputerową</strong>, tworząc profesjonalne projekty
-                  wizualne dopasowane do potrzeb klientów.
-                </p>
-              </CardContent>
-            </Card>
+              <Card className="bg-secondary/50 border-border hover:shadow-md transition-shadow">
+                  <CardContent className="p-6 space-y-4">
+                      <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
+                          <Palette className="h-6 w-6 text-foreground"/>
+                      </div>
+                      <h2 className="text-xl font-semibold">Grafika Komputerowa</h2>
+                      <p className="text-muted-foreground">
+                          Od prawie 5 lat zajmuję się <strong>grafiką komputerową</strong>, tworząc profesjonalne
+                          projekty
+                          wizualne dopasowane do potrzeb klientów.
+                      </p>
+                      <div className="flex flex-wrap gap-3">
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Miniaturki na platformę YouTube</Link>
+                          </Button>
+
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Logo – sygnety i pełne wersje</Link>
+                          </Button>
+
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Bannery, headery, infografiki</Link>
+                          </Button>
+
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Okładki do utworów muzycznych</Link>
+                          </Button>
+
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Identyfikacje wizualne marek</Link>
+                          </Button>
+
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Projekty UI/UX</Link>
+                          </Button>
+
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Inne projekty graficzne</Link>
+                          </Button>
+                      </div>
+                  </CardContent>
+              </Card>
           </div>
         </section>
 
-        <Separator className="my-12" />
+          <Separator className="my-12"/>
 
-        <section className="space-y-6">
-          <h2 className="text-2xl font-bold">Moje Usługi</h2>
+          <section className="space-y-6">
+              <h2 className="text-2xl font-bold">Moje Usługi</h2>
 
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold">Automatyzacje</h3>
+              <div className="space-y-8">
+                  <div className="space-y-4">
+                      <h3 className="text-xl font-semibold">Automatyzacje</h3>
 
-              <div className="flex flex-wrap gap-3">
-                <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                  <Link href="#">Boty Discord</Link>
-                </Button>
 
-                <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                  <Link href="#">Boty Telegram</Link>
-                </Button>
+                  </div>
 
-                <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                  <Link href="#">Automatyzacje Instagram</Link>
-                </Button>
+                  <div className="space-y-4">
+                      <h3 className="text-xl font-semibold">Grafika Komputerowa</h3>
 
-                <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                  <Link href="#">Automatyzacje Facebook</Link>
-                </Button>
+
+                  </div>
+
+                  <p className="text-muted-foreground">
+                      Korzystam z profesjonalnego oprogramowania, takiego jak{" "}
+                      <strong>Adobe Creative Cloud, WebStorm i Figma</strong>, co pozwala mi tworzyć{" "}
+                      <strong>dopracowane projekty na najwyższym poziomie</strong> – zarówno wizualnie, jak i
+                      technicznie.
+                  </p>
               </div>
-            </div>
+          </section>
 
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold">Grafika Komputerowa</h3>
+          <Separator className="my-12"/>
 
-              <div className="flex flex-wrap gap-3">
-                <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                  <Link href="#">Miniaturki na platformę YouTube</Link>
-                </Button>
-
-                <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                  <Link href="#">Logo – sygnety i pełne wersje</Link>
-                </Button>
-
-                <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                  <Link href="#">Bannery, headery, infografiki</Link>
-                </Button>
-
-                <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                  <Link href="#">Okładki do utworów muzycznych</Link>
-                </Button>
-
-                <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                  <Link href="#">Identyfikacje wizualne marek</Link>
-                </Button>
-
-                <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                  <Link href="#">Projekty UI/UX</Link>
-                </Button>
-
-                <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                  <Link href="#">Inne projekty graficzne</Link>
-                </Button>
-              </div>
-            </div>
-
-            <p className="text-muted-foreground">
-              Korzystam z profesjonalnego oprogramowania, takiego jak{" "}
-              <strong>Adobe Creative Cloud, WebStorm i Figma</strong>, co pozwala mi tworzyć{" "}
-              <strong>dopracowane projekty na najwyższym poziomie</strong> – zarówno wizualnie, jak i technicznie.
-            </p>
-          </div>
-        </section>
-
-        <Separator className="my-12" />
-
-        <section className="space-y-6">
-          <h2 className="text-2xl font-bold">Wycena</h2>
-          <div className="bg-secondary/80 p-6 rounded-lg border border-muted">
-            <p className="text-muted-foreground">
-              <strong>Każdy projekt wyceniam indywidualnie – całkowicie za darmo.</strong> Nie musisz się zobowiązywać –
-              wystarczy, że opiszesz mi swój pomysł. Zawsze staram się dopasować rozwiązanie do Twojego budżetu,
+          <section className="space-y-6">
+              <h2 className="text-2xl font-bold">Wycena</h2>
+              <div className="bg-secondary/80 p-6 rounded-lg border border-muted">
+                  <p className="text-muted-foreground">
+                      <strong>Każdy projekt wyceniam indywidualnie – całkowicie za darmo.</strong> Nie musisz się
+                      zobowiązywać –
+                      wystarczy, że opiszesz mi swój pomysł. Zawsze staram się dopasować rozwiązanie do Twojego budżetu,
               oferując najlepszy możliwy efekt w rozsądnej cenie.
             </p>
           </div>
