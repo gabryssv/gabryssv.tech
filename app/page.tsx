@@ -13,7 +13,7 @@ export default function Home() {
         <ThemeToggle />
       </header>
 
-      <main className="container mx-auto px-4 py-12 max-w-3xl">
+      <main className="container mx-auto px-4 py-12">
         <section className="space-y-6">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tight">Cześć, mam na imię Gabryś</h1>
@@ -21,10 +21,10 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-            <Card className="bg-card border-border hover:shadow-md transition-shadow">
+            <Card className="bg-secondary/50 border-border hover:shadow-md transition-shadow">
               <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Zap className="h-6 w-6 text-primary" />
+                <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
+                  <Zap className="h-6 w-6 text-foreground" />
                 </div>
                 <h2 className="text-xl font-semibold">Automatyzacje</h2>
                 <p className="text-muted-foreground">
@@ -35,10 +35,10 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="bg-card border-border hover:shadow-md transition-shadow">
+            <Card className="bg-secondary/50 border-border hover:shadow-md transition-shadow">
               <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Palette className="h-6 w-6 text-primary" />
+                <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
+                  <Palette className="h-6 w-6 text-foreground" />
                 </div>
                 <h2 className="text-xl font-semibold">Grafika Komputerowa</h2>
                 <p className="text-muted-foreground">
@@ -124,7 +124,7 @@ export default function Home() {
 
         <section className="space-y-6">
           <h2 className="text-2xl font-bold">Wycena</h2>
-          <div className="bg-primary/5 p-6 rounded-lg border border-primary/20">
+          <div className="bg-secondary/80 p-6 rounded-lg border border-muted">
             <p className="text-muted-foreground">
               <strong>Każdy projekt wyceniam indywidualnie – całkowicie za darmo.</strong> Nie musisz się zobowiązywać –
               wystarczy, że opiszesz mi swój pomysł. Zawsze staram się dopasować rozwiązanie do Twojego budżetu,
@@ -173,7 +173,7 @@ export default function Home() {
             Napisz do mnie w wiadomości prywatnej lub skontaktuj się mailowo. Chętnie odpowiem i pomogę zrealizować Twój
             projekt z dbałością o każdy szczegół!
           </p>
-          <Button asChild>
+          <Button variant="secondary" asChild>
             <Link href="mailto:k.gabriel@o2.pl" className="flex items-center gap-2">
               <Mail className="h-4 w-4" />
               k.gabriel@o2.pl
@@ -182,7 +182,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t mt-24 py-6 bg-muted/40">
+      <footer className="border-t mt-24 py-6 bg-secondary/30">
         <div className="container mx-auto px-4 text-center text-muted-foreground">
           <p>© {new Date().getFullYear()} Gabryś. Wszelkie prawa zastrzeżone.</p>
         </div>
