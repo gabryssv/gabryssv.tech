@@ -5,6 +5,7 @@ import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Gabryś - Automatyzacje i Grafika Komputerowa",
@@ -23,7 +24,8 @@ export default function RootLayout({
         <ThemeProvider defaultTheme="dark" storageKey="gabrys-theme">
           {children}
         </ThemeProvider>
-      <Analytics />
+       <SpeedInsights />
+       <Analytics />
       </body>
     </html>
   )
