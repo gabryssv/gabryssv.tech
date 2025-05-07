@@ -21,7 +21,7 @@ export default function Home() {
           </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-                <Card className="bg-secondary/50 border-border hover:shadow-md transition-shadow">
+                <Card className="bg-secondary/30 border-border hover:shadow-md transition-shadow">
                     <CardContent className="p-6 space-y-4">
                         <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
                             <Zap className="h-6 w-6 text-foreground"/>
@@ -36,7 +36,7 @@ export default function Home() {
                     </CardContent>
                 </Card>
 
-                <Card className="bg-secondary/50 border-border hover:shadow-md transition-shadow">
+                <Card className="bg-secondary/30 border-border hover:shadow-md transition-shadow">
                     <CardContent className="p-6 space-y-4">
                         <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
                             <Palette className="h-6 w-6 text-foreground"/>
@@ -50,7 +50,7 @@ export default function Home() {
                     </CardContent>
                 </Card>
 
-                <Card className="bg-secondary/50 border-border hover:shadow-md transition-shadow">
+                <Card className="bg-secondary/30 border-border hover:shadow-md transition-shadow">
                     <CardContent className="p-6 space-y-4">
                         <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
                             <Laptop className="h-6 w-6 text-foreground"/>
