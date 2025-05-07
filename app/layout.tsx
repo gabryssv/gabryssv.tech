@@ -10,7 +10,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 export const metadata: Metadata = {
   title: "Gabryś - Automatyzacje i Grafika Komputerowa",
   description: "Profesjonalne automatyzacje i usługi graficzne w przystępnej cenie",
-  icons: "https://gabryssv.tech/favicon.ico"
 }
 
 export default function RootLayout({
@@ -19,14 +18,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pl" suppressHydrationWarning>
+      <html lang="pl" suppressHydrationWarning>
+      <head>
+          <link rel="icon" href="/favicon.ico" sizes="any"/>
+      </head>
       <body className={`${GeistSans.variable} ${GeistMono.variable} font-sans antialiased`}>
-        <ThemeProvider defaultTheme="dark" storageKey="gabrys-theme">
+      <ThemeProvider defaultTheme="dark" storageKey="gabrys-theme">
           {children}
-        </ThemeProvider>
-       <SpeedInsights />
-       <Analytics />
+      </ThemeProvider>
+      <SpeedInsights/>
+      <Analytics/>
       </body>
-    </html>
+      </html>
   )
 }
