@@ -73,85 +73,82 @@ export default function Home() {
           <h2 className="text-2xl font-bold">Moje Usługi</h2>
 
               <div className="space-y-8">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-                      <div className="space-y-4">
-                          <h3 className="text-xl font-semibold">Automatyzacje</h3>
+                  <div className="space-y-4">
+                      <h3 className="text-xl text-center font-semibold">Automatyzacje</h3>
 
-                          <div className="flex flex-wrap gap-3">
-                              <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                                  <Link href="#">Boty Discord</Link>
-                              </Button>
+                      <div className="flex flex-wrap gap-3">
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Boty Discord</Link>
+                          </Button>
 
-                              <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                                  <Link href="#">Boty Telegram</Link>
-                              </Button>
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Boty Telegram</Link>
+                          </Button>
 
-                              <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                                  <Link href="#">Automatyzacje Instagram</Link>
-                              </Button>
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Automatyzacje Instagram</Link>
+                          </Button>
 
-                              <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                                  <Link href="#">Automatyzacje Facebook</Link>
-                              </Button>
-                          </div>
-                      </div>
-
-                      <div className="space-y-4">
-                          <h3 className="text-xl font-semibold">Grafika Komputerowa</h3>
-
-                          <div className="flex flex-wrap gap-3">
-                              <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                                  <Link href="#">Miniaturki na platformę YouTube</Link>
-                              </Button>
-
-                              <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                                  <Link href="#">Logo – sygnety i pełne wersje</Link>
-                              </Button>
-
-                              <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                                  <Link href="#">Bannery, headery, infografiki</Link>
-                              </Button>
-
-                              <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                                  <Link href="#">Okładki do utworów muzycznych</Link>
-                              </Button>
-
-                              <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                                  <Link href="#">Identyfikacje wizualne marek</Link>
-                              </Button>
-
-                              <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                                  <Link href="#">Projekty UI/UX</Link>
-                              </Button>
-
-                              <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                                  <Link href="#">Inne projekty graficzne</Link>
-                              </Button>
-                          </div>
-                      </div>
-
-                      <div className="space-y-4">
-                          <h3 className="text-xl font-semibold">UI/UX Design</h3>
-
-                          <div className="flex flex-wrap gap-3">
-                              <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                                  <Link href="#">Projekty Stron Internetowych</Link>
-                              </Button>
-
-                              <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                                  <Link href="#">Projekty Aplikacji</Link>
-                              </Button>
-                          </div>
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Automatyzacje Facebook</Link>
+                          </Button>
                       </div>
                   </div>
-                  
-                      <p className="text-muted-foreground">
-                          Korzystam z profesjonalnego oprogramowania, takiego jak{" "}
-                          <strong>Adobe Creative Cloud, WebStorm i Figma</strong>, co pozwala mi tworzyć{" "}
-                          <strong>dopracowane projekty na najwyższym poziomie</strong> – zarówno wizualnie, jak i
-                          technicznie.
-                      </p>
+
+                  <div className="space-y-4">
+                      <h3 className="text-xl text-center font-semibold">Grafika Komputerowa</h3>
+
+                      <div className="flex flex-wrap gap-3">
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Miniaturki na platformę YouTube</Link>
+                          </Button>
+
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Logo – sygnety i pełne wersje</Link>
+                          </Button>
+
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Bannery, headery, infografiki</Link>
+                          </Button>
+
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Okładki do utworów muzycznych</Link>
+                          </Button>
+
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Identyfikacje wizualne marek</Link>
+                          </Button>
+
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Projekty UI/UX</Link>
+                          </Button>
+
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Inne projekty graficzne</Link>
+                          </Button>
+                      </div>
                   </div>
+
+                  <div className="space-y-4">
+                      <h3 className="text-xl text-center font-semibold">UI/UX Design</h3>
+
+                      <div className="flex flex-wrap gap-3">
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Projekty Stron Internetowych</Link>
+                          </Button>
+
+                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
+                              <Link href="#">Projekty Aplikacji</Link>
+                          </Button>
+                      </div>
+                  </div>
+                  <p className="text-muted-foreground">
+                      Korzystam z profesjonalnego oprogramowania, takiego jak{" "}
+                      <strong>Adobe Creative Cloud, WebStorm i Figma</strong>, co pozwala mi tworzyć{" "}
+                      <strong>dopracowane projekty na najwyższym poziomie</strong> – zarówno wizualnie, jak i
+                      technicznie.
+                  </p>
+              </div>
           </section>
 
           <Separator className="my-12"/>
