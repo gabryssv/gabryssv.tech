@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
       <html lang="pl" suppressHydrationWarning>
       <head>
-          <link rel="icon" href="/favicon.ico" sizes="any"/>
+          <link rel="icon" href="./favicon.ico"/>
       </head>
       <body className={`${GeistSans.variable} ${GeistMono.variable} font-sans antialiased`}>
       <ThemeProvider defaultTheme="dark" storageKey="gabrys-theme">
