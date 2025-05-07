@@ -155,7 +155,7 @@ export default function Home() {
 
           <section className="space-y-6">
               <h2 className="text-2xl font-bold">Wycena</h2>
-              <div className="bg-secondary/0 p-6 rounded-lg border border-input">
+              <div className="bg-secondary/0 p-6 rounded-xl border border-input">
                   <p className="text-muted-foreground">
                       <strong>Każdy projekt wyceniam indywidualnie – całkowicie za darmo.</strong> Nie musisz się
                       zobowiązywać –
