@@ -10,7 +10,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 export const metadata: Metadata = {
   title: "Gabryś - Automatyzacje i Grafika Komputerowa",
   description: "Profesjonalne automatyzacje i usługi graficzne w przystępnej cenie",
-    generator: 'v0.dev'
+  icons: "/favicon.ico"
 }
 
 export default function RootLayout({
