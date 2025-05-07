@@ -76,7 +76,7 @@ export default function Home() {
                   <div className="space-y-4">
                       <h3 className="text-xl text-center font-semibold">Automatyzacje</h3>
 
-                      <div className="flex flex-wrap gap-3">
+                      <div className="flex place-content-center flex-wrap gap-3">
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
                               <Link href="#">Boty Discord</Link>
                           </Button>
@@ -98,7 +98,7 @@ export default function Home() {
                   <div className="space-y-4">
                       <h3 className="text-xl text-center font-semibold">Grafika Komputerowa</h3>
 
-                      <div className="flex flex-wrap gap-3">
+                      <div className="flex place-content-center flex-wrap gap-3">
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
                               <Link href="#">Miniaturki na platformę YouTube</Link>
                           </Button>
@@ -132,7 +132,7 @@ export default function Home() {
                   <div className="space-y-4">
                       <h3 className="text-xl text-center font-semibold">UI/UX Design</h3>
 
-                      <div className="flex flex-wrap gap-3">
+                      <div className="flex place-content-center flex-wrap gap-3">
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
                               <Link href="#">Projekty Stron Internetowych</Link>
                           </Button>
