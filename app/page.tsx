@@ -8,64 +8,67 @@ import Link from "next/link"
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="container mx-auto py-6 px-4 flex justify-between items-center">
+      <header className="fixed container mx-auto py-6 px-4 flex justify-between items-center">
         <h1 className="text-xl font-bold">Gabryś</h1>
         <ThemeToggle />
       </header>
 
-      <main className="container mx-auto px-4 py-12">
-        <section className="space-y-6">
+      <section className="min-h-screen flex items-center px-4 md:px-16">
+        <div className="max-w-3xl w-full mx-auto">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tight">Cześć, mam na imię Gabryś</h1>
             <p className="text-xl text-muted-foreground">Tworzę automatyzacje i projekty graficzne</p>
           </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-                <Card className="bg-secondary/30 border-input transition-shadow">
-                    <CardContent className="p-6 space-y-4">
-                        <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
-                            <Zap className="h-6 w-6 text-foreground"/>
-                        </div>
-                        <h2 className="text-xl font-semibold">Automatyzacje</h2>
-                        <p className="text-muted-foreground">
-                            Od ponad 2 lat tworzę <strong>rozwiązania automatyzujące</strong> dla różnych platform, w
-                            tym Discord,
-                            Telegram, Instagram i Facebook. Oferuję{" "}
-                            <strong>spersonalizowane rozwiązania w przystępnej cenie</strong>.
-                        </p>
-                    </CardContent>
-                </Card>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <Card className="bg-secondary/30 border-input transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
+                  <Zap className="h-6 w-6 text-foreground" />
+                </div>
+                <h2 className="text-xl font-semibold">Automatyzacje</h2>
+                <p className="text-muted-foreground">
+                  Od ponad 2 lat tworzę <strong>rozwiązania automatyzujące</strong> dla różnych platform, w
+                  tym Discord,
+                  Telegram, Instagram i Facebook. Oferuję{" "}
+                  <strong>spersonalizowane rozwiązania w przystępnej cenie</strong>.
+                </p>
+              </CardContent>
+            </Card>
 
-                <Card className="bg-secondary/30 border-input transition-shadow">
-                    <CardContent className="p-6 space-y-4">
-                        <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
-                            <Palette className="h-6 w-6 text-foreground"/>
-                        </div>
-                        <h2 className="text-xl font-semibold">Grafika Komputerowa</h2>
-                        <p className="text-muted-foreground">
-                            Od prawie 5 lat zajmuję się <strong>grafiką komputerową</strong>, tworząc profesjonalne
-                            projekty
-                            wizualne dopasowane do potrzeb klientów.
-                        </p>
-                    </CardContent>
-                </Card>
+            <Card className="bg-secondary/30 border-input transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
+                  <Palette className="h-6 w-6 text-foreground" />
+                </div>
+                <h2 className="text-xl font-semibold">Grafika Komputerowa</h2>
+                <p className="text-muted-foreground">
+                  Od prawie 5 lat zajmuję się <strong>grafiką komputerową</strong>, tworząc profesjonalne
+                  projekty
+                  wizualne dopasowane do potrzeb klientów.
+                </p>
+              </CardContent>
+            </Card>
 
-                <Card className="bg-secondary/30 border-input transition-shadow">
-                    <CardContent className="p-6 space-y-4">
-                        <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
-                            <Laptop className="h-6 w-6 text-foreground"/>
-                        </div>
-                        <h2 className="text-xl font-semibold">UI/UX Design</h2>
-                        <p className="text-muted-foreground">
-                            Od 2 lat projektuję <strong>intuicyjne interfejsy</strong> i <strong>kompleksowe doświadczenia
-                            użytkownika</strong>,
-                            łącząc estetykę z funkcjonalnością. Tworzę projekty dostosowane do potrzeb użytkowników i
-                            celów marketingowych.
-                        </p>
-                    </CardContent>
-                </Card>
-            </div>
-        </section>
+            <Card className="bg-secondary/30 border-input transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
+                  <Laptop className="h-6 w-6 text-foreground" />
+                </div>
+                <h2 className="text-xl font-semibold">UI/UX Design</h2>
+                <p className="text-muted-foreground">
+                  Od 2 lat projektuję <strong>intuicyjne interfejsy</strong> i <strong>kompleksowe doświadczenia
+                    użytkownika</strong>,
+                  łącząc estetykę z funkcjonalnością. Tworzę projekty dostosowane do potrzeb użytkowników i
+                  celów marketingowych.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <main className="container mx-auto px-4 py-12">
 
           <Separator className="my-12"/>
 
