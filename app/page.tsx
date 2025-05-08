@@ -15,12 +15,12 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="min-h-screen flex items-center px-4 md:px-16">
-        <div className="max-w-3xl w-full mx-auto">
+      <section className="min-h-screen flex items-center justify-center px-4 md:px-16">
+        <div className="mx-auto">
           <div className="space-y-2">
-            <p className="text-xl  text-muted-foreground">Cześć, mam na imię Gabryś</p>
-            <h1 className="text-4xl tracking-tight font-bold uppercase">Tworzę automatyzacje i projekty graficzne</h1>
-            <p className="text-xl font-bold tracking-tight">Cześć, mam na imię Gabryś</p>
+            <p className="text-xl text-muted-foreground">Cześć, mam na imię Gabryś</p>
+            <h1 className="text-4xl tracking-tight font-bold uppercase">W MOICH PROJEKTACH<br/>KAZDY DETAL MA ZNACZENIE</h1>
+            <p className="text-xl text-muted-foreground">Cześć, mam na imię Gabryś</p>
           </div>
         </div>
       </section>
