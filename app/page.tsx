@@ -78,19 +78,19 @@ export default function Home() {
 
                       <div className="flex flex-wrap gap-3">
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Boty Discord</Link>
+                              Boty Discord
                           </Button>
 
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Boty Telegram</Link>
+                              Boty Telegram
                           </Button>
 
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Automatyzacje Instagram</Link>
+                              Automatyzacje Instagram
                           </Button>
 
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Automatyzacje Facebook</Link>
+                              Automatyzacje Facebook
                           </Button>
                       </div>
                   </div>
@@ -100,31 +100,31 @@ export default function Home() {
 
                       <div className="flex flex-wrap gap-3">
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Miniaturki na platformę YouTube</Link>
+                              Miniaturki na platformę YouTube
                           </Button>
 
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Logo – sygnety i pełne wersje</Link>
+                              Logo – sygnety i pełne wersje
                           </Button>
 
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Bannery, headery, infografiki</Link>
+                              Bannery, headery, infografiki
                           </Button>
 
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Okładki do utworów muzycznych</Link>
+                              Okładki do utworów muzycznych
                           </Button>
 
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Identyfikacje wizualne marek</Link>
+                              Identyfikacje wizualne marek
                           </Button>
 
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Projekty UI/UX</Link>
+                              Projekty UI/UX
                           </Button>
 
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Inne projekty graficzne</Link>
+                              Inne projekty graficzne
                           </Button>
                       </div>
                   </div>
@@ -134,11 +134,11 @@ export default function Home() {
 
                       <div className="flex flex-wrap gap-3">
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Projekty Stron Internetowych</Link>
+                              Projekty Stron Internetowych
                           </Button>
 
                           <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Projekty Aplikacji</Link>
+                              Projekty Aplikacji Mobilnych
                           </Button>
                       </div>
                   </div>
@@ -155,7 +155,7 @@ export default function Home() {
 
           <section className="space-y-6">
               <h2 className="text-2xl font-bold">Wycena</h2>
-              <div className="bg-secondary/0 p-6 rounded-xl border border-input">
+              <div className="bg-secondary/30 p-6 rounded-xl border border-input">
                   <p className="text-muted-foreground">
                       <strong>Każdy projekt wyceniam indywidualnie – całkowicie za darmo.</strong> Nie musisz się
                       zobowiązywać –
