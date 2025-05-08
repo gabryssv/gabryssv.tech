@@ -26,3 +26,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .vercel
+.idea/.gitignore
+.idea/discord.xml
+.idea/gabryssv.tech.iml
+.idea/modules.xml
+.idea/vcs.xml
+.gitignore
