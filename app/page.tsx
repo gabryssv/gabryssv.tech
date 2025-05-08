@@ -18,8 +18,9 @@ export default function Home() {
       <section className="min-h-screen flex items-center px-4 md:px-16">
         <div className="max-w-3xl w-full mx-auto">
           <div className="space-y-2">
-            <h1 className="text-4xl font-bold tracking-tight">Cześć, mam na imię Gabryś</h1>
-            <p className="text-xl text-muted-foreground">Tworzę automatyzacje i projekty graficzne</p>
+            <p className="text-xl  text-muted-foreground">Cześć, mam na imię Gabryś</p>
+            <h1 className="text-4xl tracking-tight font-bold uppercase">Tworzę automatyzacje i projekty graficzne</h1>
+            <p className="text-xl font-bold tracking-tight">Cześć, mam na imię Gabryś</p>
           </div>
         </div>
       </section>
