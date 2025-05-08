@@ -37,7 +37,7 @@ export function ThemeProvider({ children, defaultTheme = "dark", storageKey = "t
     const root = window.document.documentElement
 
     // Add a smooth transition for theme changes
-    root.style.transition = "background-color 0.3s, color 0.3s"
+    root.style.transition = "background-color 1s, color 1s"
 
     // Remove the old theme class
     root.classList.remove("light", "dark")
