@@ -37,6 +37,7 @@
     --sidebar-accent-foreground: 0 0% 10%;
     --sidebar-border: 0 0% 91%;
     --sidebar-ring: 0 0% 60%;
+    --transition-speed: 1s;
   }
 
   .dark {
@@ -72,6 +73,21 @@
     --sidebar-accent-foreground: 0 0% 96%;
     --sidebar-border: 0 0% 16%;
     --sidebar-ring: 0 0% 60%;
+  }
+
+  /* Dodajemy płynne przejście dla elementów, które zmieniają się przy zmianie motywu */
+  html {
+    transition: color var(--transition-speed) ease,
+                background-color var(--transition-speed) ease,
+                border-color var(--transition-speed) ease,
+                box-shadow var(--transition-speed) ease;
+  }
+  
+  html * {
+    transition: color var(--transition-speed) ease,
+                background-color var(--transition-speed) ease,
+                border-color var(--transition-speed) ease,
+                box-shadow var(--transition-speed) ease;
   }
 }
 
