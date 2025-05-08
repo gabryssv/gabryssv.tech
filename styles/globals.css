@@ -22,7 +22,7 @@ body {
     --popover-foreground: 0 0% 4%;
     --primary: 0 0% 9%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96%;
+    --secondary: 0 0% 85%;
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
@@ -31,7 +31,7 @@ body {
     --destructive: 0 0% 40%; /* zmienione z kolorowego na szary */
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 90%;
-    --input: 0 0% 90%;
+    --input: 0 0% 85%;
     --ring: 0 0% 4%;
     --chart-1: 0 0% 70%; /* zmienione na odcienie szarości */
     --chart-2: 0 0% 60%;
