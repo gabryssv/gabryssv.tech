@@ -85,19 +85,19 @@ export default function Home() {
                       <h3 className="text-xl font-semibold">Automatyzacje</h3>
 
                         <div className="flex flex-wrap gap-3">
-                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                          <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
                             Boty Discord
                           </Button>
 
-                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                          <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
                             Boty Telegram
                           </Button>
 
-                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                          <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
                             Automatyzacje Instagram
                           </Button>
 
-                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                          <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
                             Automatyzacje Facebook
                           </Button>
                         </div>
@@ -106,31 +106,31 @@ export default function Home() {
                   <div className="space-y-4">
                       <h3 className="text-xl font-semibold">Grafika Komputerowa</h3>
                         <div className="flex flex-wrap gap-3">
-                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                          <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
                             Miniaturki na platformę YouTube
                           </Button>
 
-                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                          <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
                             Logo – sygnety i pełne wersje
                           </Button>
 
-                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                          <Button variant="outline" className="bg-transparent h-auto py-2 px-4 font-normal cursor-pointer">
                             Bannery, headery, infografiki
                           </Button>
 
-                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                          <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
                             Okładki do utworów muzycznych
                           </Button>
 
-                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                          <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
                             Identyfikacje wizualne marek
                           </Button>
 
-                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                          <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
                             Projekty UI/UX
                           </Button>
 
-                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                          <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
                             Inne projekty graficzne
                           </Button>
                         </div>
@@ -140,11 +140,11 @@ export default function Home() {
                       <h3 className="text-xl font-semibold">UI/UX Design</h3>
 
                         <div className="flex flex-wrap gap-3">
-                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                          <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
                             Projekty Stron Internetowych
                           </Button>
 
-                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                          <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
                             Projekty Aplikacji
                           </Button>
                         </div>
