@@ -8,7 +8,7 @@ import Link from "next/link"
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="fixed w-full py-6 px-4 flex justify-between items-center backdrop-blur-[80px] bg-white/80 border-b">
+      <header className="fixed w-full py-6 px-4 flex justify-between items-center backdrop-blur-[80px] bg-background/80 border-b">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-xl font-bold">Gabryś</h1>
           <ThemeToggle />
