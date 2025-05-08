@@ -76,57 +76,56 @@ export default function Home() {
                   <div className="space-y-4">
                       <h3 className="text-xl font-semibold">Automatyzacje</h3>
 
-                      <div className="flex flex-wrap gap-3">
-                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Boty Discord</Link>
+                        <div className="flex flex-wrap gap-3">
+                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                            Boty Discord
                           </Button>
 
-                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Boty Telegram</Link>
+                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                            Boty Telegram
                           </Button>
 
-                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Automatyzacje Instagram</Link>
+                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                            Automatyzacje Instagram
                           </Button>
 
-                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Automatyzacje Facebook</Link>
+                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                            Automatyzacje Facebook
                           </Button>
-                      </div>
+                        </div>
                   </div>
 
                   <div className="space-y-4">
                       <h3 className="text-xl font-semibold">Grafika Komputerowa</h3>
-
-                      <div className="flex flex-wrap gap-3">
-                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Miniaturki na platformę YouTube</Link>
+                        <div className="flex flex-wrap gap-3">
+                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                            Miniaturki na platformę YouTube
                           </Button>
 
-                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Logo – sygnety i pełne wersje</Link>
+                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                            Logo – sygnety i pełne wersje
                           </Button>
 
-                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Bannery, headery, infografiki</Link>
+                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                            Bannery, headery, infografiki
                           </Button>
 
-                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Okładki do utworów muzycznych</Link>
+                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                            Okładki do utworów muzycznych
                           </Button>
 
-                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Identyfikacje wizualne marek</Link>
+                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                            Identyfikacje wizualne marek
                           </Button>
 
-                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Projekty UI/UX</Link>
+                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                            Projekty UI/UX
                           </Button>
 
-                          <Button variant="outline" asChild className="h-auto py-2 px-4 font-normal">
-                              <Link href="#">Inne projekty graficzne</Link>
+                          <Button variant="outline" className="h-auto py-2 px-4 font-normal cursor-pointer">
+                            Inne projekty graficzne
                           </Button>
-                      </div>
+                        </div>
                   </div>
 
                   <div className="space-y-4">
