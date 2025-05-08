@@ -21,8 +21,11 @@ export default function RootLayout({
       <html lang="pl" suppressHydrationWarning>
       <head>
           <link rel="icon" href="./favicon.ico"/>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
       </head>
-      <body className={`${GeistSans.variable} ${GeistMono.variable} font-sans antialiased`}>
+      <body className={`${GeistSans.variable} ${GeistMono.variable} font-serif antialiased`}>
       <ThemeProvider defaultTheme="dark" storageKey="gabrys-theme">
           {children}
       </ThemeProvider>
