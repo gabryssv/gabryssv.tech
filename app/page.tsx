@@ -20,7 +20,9 @@ export default function Home() {
           <div className="space-y-2">
             <p className="text-xl text-muted-foreground">Cześć, mam na imię Gabryś</p>
             <h1 className="text-4xl tracking-tight font-bold uppercase">W MOICH PROJEKTACH<br/>KAZDY DETAL MA ZNACZENIE</h1>
-            <p className="text-xl text-muted-foreground">Cześć, mam na imię Gabryś</p>
+            <p className="text-xl text-muted-foreground">
+              Cześć, jestem Gabryś. Od ponad dwóch lat zajmuję się tworzeniem automatyzacji oraz projektowaniem intuicyjnych interfejsów stron i aplikacji. To moja pasja – uwielbiam łączyć estetykę z funkcjonalnością, tworząc rozwiązania, które idealnie odpowiadają na potrzeby użytkowników i marek.
+            </p>
           </div>
         </div>
       </section>
