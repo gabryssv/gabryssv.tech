@@ -1,16 +1,16 @@
 import type React from "react"
 import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import { Space_Grotesk, Almendra } from "next/font/google"
+import { Inter, Almendra } from "next/font/google"
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
-// Initialize Space Grotesk font
-const spaceGrotesk = Space_Grotesk({
+
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-space-grotesk',
+  variable: '--font-inter',
 })
 
 // Initialize Almendra font
@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-      <html lang="pl" suppressHydrationWarning className={`${spaceGrotesk.variable} ${almendra.variable}`}>
+      <html lang="pl" suppressHydrationWarning className={`${inter.variable} ${almendra.variable}`}>
       <head>
           <link rel="icon" href="./favicon.ico"/>
       </head>

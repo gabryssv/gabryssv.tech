@@ -20,7 +20,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-space-grotesk)"],
+        sans: ["var(--font-inter)"],
         mono: ["var(--font-geist-mono)"],
         almendra: ["var(--font-almendra)"],
       },
