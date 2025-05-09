@@ -20,7 +20,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-geist-sans)"],
+        sans: ["var(--font-space-grotesk)"],
         mono: ["var(--font-geist-mono)"],
       },
       colors: {

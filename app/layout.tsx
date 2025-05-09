@@ -6,15 +6,17 @@ import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
+// Initialize Space Grotesk font
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-space-grotesk',
+})
+
 export const metadata: Metadata = {
   title: "Gabryś - Automatyzacje i Grafika Komputerowa",
   description: "Profesjonalne automatyzacje i usługi graficzne w przystępnej cenie",
 }
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space-grotesk",
-})
 
 export default function RootLayout({
   children,
@@ -22,11 +24,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-      <html lang="pl" suppressHydrationWarning>
+      <html lang="pl" suppressHydrationWarning className={spaceGrotesk.variable}>
       <head>
           <link rel="icon" href="./favicon.ico"/>
       </head>
-      <body className={`${spaceGrotesk.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
       <ThemeProvider defaultTheme="dark" storageKey="gabrys-theme">
           {children}
       </ThemeProvider>
