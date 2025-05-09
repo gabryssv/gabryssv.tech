@@ -22,6 +22,7 @@ const config = {
       fontFamily: {
         sans: ["var(--font-space-grotesk)"],
         mono: ["var(--font-geist-mono)"],
+        almendra: ["var(--font-almendra)"],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -16,10 +16,11 @@ export default function Home() {
       </header>
 
       <section className="min-h-screen flex items-center justify-center px-6 md:px-16">
-        <div className="mx-auto max-w-3xl w-full">
+        <div className="mx-auto max-w-3xl w-full text-center">
           <div className="space-y-2">
             <p className="text-xl text-muted-foreground">Cześć, mam na imię Gabryś</p>
-            <h1 className="text-4xl tracking-tight font-bold uppercase">W MOICH PROJEKTACH KAŻDY DETAL MA ZNACZENIE</h1>
+            <h1 className="text-4xl tracking-tight font-bold uppercase">W MOICH PROJEKTACH</h1>
+            <h1 className="text-4xl tracking-tight font-bold uppercase font-almendra">KAŻDY DETAL MA ZNACZENIE</h1>
             <p className="text-xl text-muted-foreground">
               Cześć, jestem Gabryś. Od ponad dwóch lat zajmuję się tworzeniem automatyzacji oraz projektowaniem intuicyjnych interfejsów stron i aplikacji. To moja pasja – uwielbiam łączyć estetykę z funkcjonalnością, tworząc rozwiązania, które idealnie odpowiadają na potrzeby użytkowników i marek.
             </p>
