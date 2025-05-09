@@ -18,7 +18,7 @@ const almendra = Almendra({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-almendra',
-  weight: ['400', '700'],
+  weight: ['400'],
 })
 
 export const metadata: Metadata = {
