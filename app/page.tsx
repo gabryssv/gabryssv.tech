@@ -94,7 +94,10 @@ export default function Home() {
           <Separator className="my-12"/>
 
           <section id="services" className="space-y-6">
-          <h2 className="text-2xl font-bold">Moje Usługi</h2>
+          <div className="space-x-2 flex">
+                <h2 className="text-6xl tracking-tight font-bold ">Moje</h2>
+                <h2 className="text-6xl tracking-tight font-almendra">Usługi</h2>
+          </div>
 
               <div className="space-y-8">
                   <div className="space-y-4">
