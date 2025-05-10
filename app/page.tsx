@@ -20,13 +20,13 @@ export default function Home() {
 				<div className="mx-auto max-w-3xl w-full">
 					<div className="space-y-8 text-center">
 						<div className="space-y-4 text-center">
-							<p className="text-xl text-muted-foreground">Cześć, mam na imię Gabryś</p>
+							<p className="md:text-xl text-muted-foreground">Cześć, mam na imię Gabryś</p>
 							<div className="space-y-2">
-								<h1 className="text-6xl tracking-tight font-bold ">W moich projektach</h1>
-								<h1 className="text-6xl tracking-tight font-almendra">Każdy detal ma znaczenie.</h1>
+								<h1 className="text-5xl md:text-6xl tracking-tight font-bold ">W moich projektach</h1>
+								<h1 className="text-5xl md:text-6xl tracking-tight font-almendra">Każdy detal ma znaczenie.</h1>
 							</div>
 						</div>
-						<p className="text-xl text-muted-foreground">
+						<p className="text-lg md:text-xl text-muted-foreground">
 							Cześć, jestem Gabryś. Od ponad dwóch lat zajmuję się tworzeniem automatyzacji oraz projektowaniem intuicyjnych interfejsów stron i aplikacji. To moja pasja – uwielbiam łączyć estetykę z funkcjonalnością, tworząc rozwiązania, które idealnie odpowiadają na potrzeby użytkowników i marek.
 						</p>
 						<div className="flex justify-center gap-4">
