@@ -17,7 +17,7 @@ export default function Home() {
 
       <section className="min-h-screen flex items-center justify-center px-6 md:px-16">
 <div className="mx-auto max-w-3xl w-full">
-  <div className="space-y-8">
+  <div className="space-y-8 text-center">
     <div className="space-y-4 text-center">
       <p className="text-xl text-muted-foreground">Cześć, mam na imię Gabryś</p>
       <div className="space-y-2">
