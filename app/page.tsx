@@ -95,7 +95,7 @@ export default function Home() {
 
           <section id="services" className="space-y-6">
           <div className="space-x-2 flex">
-                <h2 className="text-5xl tracking-tight font-bold ">Moje <b className="font-almendra">Usługi</b></h2>
+                <h2 className="text-5xl tracking-tight font-semibold">Moje <b className="font-almendra">Usługi</b></h2>
           </div>
 
               <div className="space-y-8">
