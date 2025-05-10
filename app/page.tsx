@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { ScrollButton } from "@/components/scroll-button"
 import { Mail, ExternalLink, Palette, Zap, Laptop } from "lucide-react"
 import Link from "next/link"
 
@@ -16,20 +17,28 @@ export default function Home() {
       </header>
 
       <section className="min-h-screen flex items-center justify-center px-6 md:px-16">
-<div className="mx-auto max-w-3xl w-full">
-  <div className="space-y-8 text-center">
-    <div className="space-y-4 text-center">
-      <p className="text-xl text-muted-foreground">Cześć, mam na imię Gabryś</p>
-      <div className="space-y-2">
-        <h1 className="text-6xl tracking-tight font-bold ">W moich projektach</h1>
-        <h1 className="text-6xl tracking-tight font-almendra">Każdy detal ma znaczenie</h1>
-      </div>
-    </div>
-    <p className="text-xl text-muted-foreground">
-    Cześć, jestem Gabryś. Od ponad dwóch lat zajmuję się tworzeniem automatyzacji oraz projektowaniem intuicyjnych interfejsów stron i aplikacji. To moja pasja – uwielbiam łączyć estetykę z funkcjonalnością, tworząc rozwiązania, które idealnie odpowiadają na potrzeby użytkowników i marek.
-    </p>
-  </div>
-</div>
+        <div className="mx-auto max-w-3xl w-full">
+          <div className="space-y-8 text-center">
+            <div className="space-y-4 text-center">
+              <p className="text-xl text-muted-foreground">Cześć, mam na imię Gabryś</p>
+              <div className="space-y-2">
+                <h1 className="text-6xl tracking-tight font-bold ">W moich projektach</h1>
+                <h1 className="text-6xl tracking-tight font-almendra">Każdy detal ma znaczenie.</h1>
+              </div>
+            </div>
+            <p className="text-xl text-muted-foreground">
+              Cześć, jestem Gabryś. Od ponad dwóch lat zajmuję się tworzeniem automatyzacji oraz projektowaniem intuicyjnych interfejsów stron i aplikacji. To moja pasja – uwielbiam łączyć estetykę z funkcjonalnością, tworząc rozwiązania, które idealnie odpowiadają na potrzeby użytkowników i marek.
+            </p>
+            <div className="flex justify-center gap-4">
+              <ScrollButton targetId="services" variant="default">
+                Moje Usługi
+              </ScrollButton>
+              <ScrollButton targetId="contact" variant="outline">
+                Kontakt
+              </ScrollButton>
+            </div>
+          </div>
+        </div>
       </section>
 
       <main className="container mx-auto px-4 py-12">
@@ -84,7 +93,7 @@ export default function Home() {
 
           <Separator className="my-12"/>
 
-          <section className="space-y-6">
+          <section id="services" className="space-y-6">
           <h2 className="text-2xl font-bold">Moje Usługi</h2>
 
               <div className="space-y-8">
@@ -212,7 +221,7 @@ export default function Home() {
 
         <Separator className="my-12" />
 
-        <section className="space-y-6">
+        <section id="contact" className="space-y-6">
           <h2 className="text-2xl font-bold">Kontakt</h2>
           <p className="text-muted-foreground">Jesteś zainteresowany? Masz pytanie? Potrzebujesz wstępnej wyceny?</p>
           <p className="text-muted-foreground">
