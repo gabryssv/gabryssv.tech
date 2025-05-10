@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ScrollButton } from "@/components/scroll-button"
-import { Mail, ExternalLink, Palette, Zap, Laptop } from "lucide-react"
+import { Mail, ExternalLink, Palette, Zap, Laptop, ChevronRight } from "lucide-react"
 import Link from "next/link"
 
 export default function Home() {
@@ -30,8 +30,8 @@ export default function Home() {
               Cześć, jestem Gabryś. Od ponad dwóch lat zajmuję się tworzeniem automatyzacji oraz projektowaniem intuicyjnych interfejsów stron i aplikacji. To moja pasja – uwielbiam łączyć estetykę z funkcjonalnością, tworząc rozwiązania, które idealnie odpowiadają na potrzeby użytkowników i marek.
             </p>
             <div className="flex justify-center gap-4">
-              <ScrollButton targetId="services" variant="default">
-                Moje Usługi
+              <ScrollButton targetId="services" variant="default" className="flex items-center gap-2">
+                Moje Usługi <ChevronRight className="h-4 w-4" />
               </ScrollButton>
               <ScrollButton targetId="contact" variant="outline">
                 Kontakt
