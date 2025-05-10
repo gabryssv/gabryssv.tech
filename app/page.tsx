@@ -186,7 +186,7 @@ export default function Home() {
 					<div className="space-x-2 flex">
 						<h2 className="text-5xl tracking-tight font-semibold">Wycena <b className="font-almendra">projektu</b></h2>
 					</div>
-					<div className="bg-secondary/30 p-6 rounded-xl border border-input">
+					<div className="bg-secondary/30 p-6 rounded-md border border-input">
 						<p className="text-muted-foreground">
 							<strong>Każdy projekt wyceniam indywidualnie – całkowicie za darmo.</strong> Nie musisz się
 							zobowiązywać –
