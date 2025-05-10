@@ -16,18 +16,20 @@ export default function Home() {
       </header>
 
       <section className="min-h-screen flex items-center justify-center px-6 md:px-16">
-        <div className="mx-auto max-w-3xl w-full">
-          <div className="space-y-4 text-center">
-            <p className="text-xl text-muted-foreground">Cześć, mam na imię Gabryś</p>
-            <div className="space-y-2">
-              <h1 className="text-6xl tracking-tight font-bold ">W moich projektach</h1>
-              <h1 className="text-6xl tracking-tight font-almendra">Każdy detal ma znaczenie</h1>
-            </div>
-            <p className="text-xl text-muted-foreground">
-              Cześć, jestem Gabryś. Od ponad dwóch lat zajmuję się tworzeniem automatyzacji oraz projektowaniem intuicyjnych interfejsów stron i aplikacji. To moja pasja – uwielbiam łączyć estetykę z funkcjonalnością, tworząc rozwiązania, które idealnie odpowiadają na potrzeby użytkowników i marek.
-            </p>
-          </div>
-        </div>
+<div className="mx-auto max-w-3xl w-full">
+  <div className="space-y-8">
+    <div className="space-y-4 text-center">
+      <p className="text-xl text-muted-foreground">Cześć, mam na imię Gabryś</p>
+      <div className="space-y-2">
+        <h1 className="text-6xl tracking-tight font-bold ">W moich projektach</h1>
+        <h1 className="text-6xl tracking-tight font-almendra">Każdy detal ma znaczenie</h1>
+      </div>
+    </div>
+    <p className="text-xl text-muted-foreground">
+    Cześć, jestem Gabryś. Od ponad dwóch lat zajmuję się tworzeniem automatyzacji oraz projektowaniem intuicyjnych interfejsów stron i aplikacji. To moja pasja – uwielbiam łączyć estetykę z funkcjonalnością, tworząc rozwiązania, które idealnie odpowiadają na potrzeby użytkowników i marek.
+    </p>
+  </div>
+</div>
       </section>
 
       <main className="container mx-auto px-4 py-12">
