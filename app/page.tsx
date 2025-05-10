@@ -95,7 +95,7 @@ export default function Home() {
 
           <section id="services" className="space-y-6">
           <div className="space-x-2 flex">
-                <h2 className="text-3xl tracking-tight font-bold ">Moje <b className="font-almendra">Usługi</b></h2>
+                <h2 className="text-5xl tracking-tight font-bold ">Moje <b className="font-almendra">Usługi</b></h2>
           </div>
 
               <div className="space-y-8">
@@ -129,11 +129,19 @@ export default function Home() {
                           </Button>
 
                           <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
-                            Logo – sygnety i pełne wersje
+                            Logo
                           </Button>
 
                           <Button variant="outline" className="bg-transparent h-auto py-2 px-4 font-normal cursor-pointer">
-                            Bannery, headery, infografiki
+                            Bannery
+                          </Button>
+
+                          <Button variant="outline" className="bg-transparent h-auto py-2 px-4 font-normal cursor-pointer">
+                            Headery
+                          </Button>
+
+                          <Button variant="outline" className="bg-transparent h-auto py-2 px-4 font-normal cursor-pointer">
+                            Infografiki
                           </Button>
 
                           <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
@@ -145,17 +153,13 @@ export default function Home() {
                           </Button>
 
                           <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
-                            Projekty UI/UX
-                          </Button>
-
-                          <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
                             Inne projekty graficzne
                           </Button>
                         </div>
                   </div>
 
                   <div className="space-y-4">
-                      <h3 className="text-xl font-semibold">UI/UX Design</h3>
+                      <h3 className="text-xl font-semibold">Projekty UI/UX Design</h3>
 
                         <div className="flex flex-wrap gap-3">
                           <Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
