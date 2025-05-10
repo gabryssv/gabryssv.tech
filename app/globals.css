@@ -99,6 +99,11 @@
     @apply bg-background text-foreground font-sans;
     font-family: 'Inter', sans-serif;
   }
+  
+  /* Add scroll margin for sections to account for fixed header */
+  section[id] {
+    scroll-margin-top: 100px;
+  }
 }
 
 @layer utilities {

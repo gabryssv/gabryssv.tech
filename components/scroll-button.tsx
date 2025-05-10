@@ -6,13 +6,25 @@ import { Button, ButtonProps } from "@/components/ui/button"
 interface ScrollButtonProps extends ButtonProps {
   targetId: string
   children: React.ReactNode
+  offset?: number // Optional custom offset
 }
 
-export function ScrollButton({ targetId, children, ...props }: ScrollButtonProps) {
+export function ScrollButton({ 
+  targetId, 
+  children, 
+  offset = 100, // Default offset to account for fixed header
+  ...props 
+}: ScrollButtonProps) {
   const scrollToSection = () => {
     const element = document.getElementById(targetId)
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      const elementPosition = element.getBoundingClientRect().top
+      const offsetPosition = elementPosition + window.pageYOffset - offset
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      })
     }
   }
 
