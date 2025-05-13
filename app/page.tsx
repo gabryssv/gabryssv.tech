@@ -23,7 +23,7 @@ export default function Home() {
 							<p className="md:text-xl text-muted-foreground">Cześć, mam na imię Gabryś</p>
 							<div className="space-y-2">
 								<h1 className="text-5xl md:text-6xl tracking-tight font-bold ">W moich projektach</h1>
-								<h1 className="text-5xl md:text-6xl tracking-tight font-almendra">Każdy detal ma znaczenie.</h1>
+								<h1 className="text-5xl	md:text-6xl tracking-tight font-almendra">Każdy detal ma znaczenie.</h1>
 							</div>
 						</div>
 						<p className="text-lg md:text-xl text-muted-foreground">
@@ -95,7 +95,7 @@ export default function Home() {
 
 				<section id="services" className="space-y-6">
 					<div className="space-x-2 flex">
-						<h2 className="text-5xl tracking-tight font-semibold">Moje <b className="font-almendra">Usługi</b></h2>
+						<h2 className="text-4xl md:text-5xl tracking-tight font-semibold">Moje <b className="font-almendra">Usługi</b></h2>
 					</div>
 
 					<div className="space-y-8">
@@ -184,7 +184,7 @@ export default function Home() {
 
 				<section className="space-y-6">
 					<div className="space-x-2 flex">
-						<h2 className="text-5xl tracking-tight font-semibold">Wycena <b className="font-almendra">projektu</b></h2>
+						<h2 className="text-4xl md:text-5xl tracking-tight font-semibold">Wycena <b className="font-almendra">projektu</b></h2>
 					</div>
 					<div className="bg-secondary/30 p-6 rounded-lg border border-input">
 						<p className="text-muted-foreground">
@@ -200,7 +200,7 @@ export default function Home() {
 
 				<section className="space-y-6">
 					<div className="space-x-2 flex">
-						<h2 className="text-5xl tracking-tight font-semibold">Kontakt <b className="font-almendra"> do mnie</b></h2>
+						<h2 className="text-4xl md:text-5xl tracking-tight font-semibold">Moje <b className="font-almendra">Portfolio</b></h2>
 					</div>
 					<p className="text-muted-foreground">Zobacz moje prace i przekonaj się sam:</p>
 					<div className="flex flex-col sm:flex-row gap-4">
@@ -233,7 +233,7 @@ export default function Home() {
 
 				<section id="contact" className="space-y-6">
 					<div className="space-x-2 flex">
-						<h2 className="text-5xl tracking-tight font-semibold">Moje <b className="font-almendra">Usługi</b></h2>
+						<h2 className="text-4xl md:text-5xl tracking-tight font-semibold">Kontakt <b className="font-almendra">do mnie</b></h2>
 					</div>
 					<p className="text-muted-foreground">Jesteś zainteresowany? Masz pytanie? Potrzebujesz wstępnej wyceny?</p>
 					<p className="text-muted-foreground">
