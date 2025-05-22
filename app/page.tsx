@@ -108,11 +108,26 @@ export default function Home() {
 									Boty Discord
 								</Button>
 
-									<Button
+								<Button
 									variant="outline"
 									disabled
-									className="bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
+									className="relative bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
 								>
+										<span
+											className="pointer-events-none select-none absolute left-1 top-1 w-[calc(100%-0.5rem)] h-[calc(100%-0.5rem)]"
+											aria-hidden="true"
+										>
+											<span className="absolute left-0 top-0 w-full h-full">
+												<span
+													className="absolute left-0 top-0 w-full h-0.5 bg-red-500 rotate-45"
+													style={{}}
+												/>
+												<span
+													className="absolute left-0 top-0 w-full h-0.5 bg-red-500 -rotate-45"
+													style={{}}
+												/>
+											</span>
+										</span>
 									Boty Telegram
 								</Button>
 
@@ -120,11 +135,26 @@ export default function Home() {
 									Automatyzacje Instagram
 								</Button>
 
-									<Button
+								<Button
 									variant="outline"
 									disabled
-									className="bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
-								>
+									className="relative bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
+									>
+										<span
+											className="pointer-events-none select-none absolute left-1 top-1 w-[calc(100%-0.5rem)] h-[calc(100%-0.5rem)]"
+											aria-hidden="true"
+										>
+											<span className="absolute left-0 top-0 w-full h-full">
+												<span
+													className="absolute left-0 top-0 w-full h-0.5 bg-red-500 rotate-45"
+													style={{}}
+												/>
+												<span
+													className="absolute left-0 top-0 w-full h-0.5 bg-red-500 -rotate-45"
+													style={{}}
+												/>
+											</span>
+										</span>
 									Automatyzacje Facebook
 								</Button>
 							</div>
