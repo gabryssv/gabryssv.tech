@@ -108,24 +108,11 @@ export default function Home() {
 									Boty Discord
 								</Button>
 
-								<Button
+									<Button
 									variant="outline"
 									disabled
-									className="relative bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
-									>
-										<span
-											className="pointer-events-none select-none absolute inset-0"
-											aria-hidden="true"
-										>
-											<span
-												className="absolute left-0 top-0 w-full h-0.5 bg-red-500"
-												style={{ transform: "rotate(45deg)" }}
-											/>
-											<span
-												className="absolute left-0 bottom-0 w-full h-0.5 bg-red-500"
-												style={{ transform: "rotate(-45deg)" }}
-											/>
-										</span>
+									className="bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
+								>
 									Boty Telegram
 								</Button>
 
@@ -133,24 +120,11 @@ export default function Home() {
 									Automatyzacje Instagram
 								</Button>
 
-								<Button
+									<Button
 									variant="outline"
 									disabled
-									className="relative bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
-									>
-										<span
-											className="pointer-events-none select-none absolute inset-0"
-											aria-hidden="true"
-										>
-											<span
-												className="absolute left-0 top-0 w-full h-0.5 bg-red-500"
-												style={{ transform: "rotate(45deg)" }}
-											/>
-											<span
-												className="absolute left-0 bottom-0 w-full h-0.5 bg-red-500"
-												style={{ transform: "rotate(-45deg)" }}
-											/>
-										</span>
+									className="bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
+								>
 									Automatyzacje Facebook
 								</Button>
 							</div>
