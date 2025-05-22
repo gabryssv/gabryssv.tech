@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ScrollButton } from "@/components/scroll-button"
-import { Mail, ExternalLink, Palette, Zap, Laptop, ChevronRight } from "lucide-react"
+import { Mail, ExternalLink, Palette, Zap, Laptop, ChevronRight, User as Discord } from "lucide-react"
 import Link from "next/link"
 
 export default function Home() {
@@ -240,12 +240,20 @@ export default function Home() {
 						Napisz do mnie w wiadomości prywatnej lub skontaktuj się mailowo. Chętnie odpowiem i pomogę zrealizować Twój
 						projekt z dbałością o każdy szczegół!
 					</p>
-					<Button variant="default" asChild>
-						<Link href="mailto:k.gabriel@o2.pl" className="flex items-center gap-2">
-							<Mail className="h-4 w-4" />
-							k.gabriel@o2.pl
-						</Link>
-					</Button>
+					<div className="flex flex-wrap gap-3">
+						<Button variant="default" asChild>
+							<Link href="mailto:k.gabriel@o2.pl" className="flex items-center gap-2">
+								<Mail className="h-4 w-4" />
+								k.gabriel@o2.pl
+							</Link>
+						</Button>
+						<Button variant="outline" asChild>
+							<Link href="https://discord.com/users/1204732596202901515" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+								<Discord className="h-4 w-4" />
+								gabryssv
+							</Link>
+						</Button>
+					</div>
 				</section>
 			</main>
 
