@@ -241,7 +241,7 @@ export default function Home() {
 						Napisz do mnie w wiadomości prywatnej lub skontaktuj się mailowo. Chętnie odpowiem i pomogę zrealizować Twój
 						projekt z dbałością o każdy szczegół!
 					</p>
-					<div className="flex flex-wrap gap-3">
+					<div className="flex flex-col sm:flex-row gap-4">
 						<Button variant="default" asChild>
 							<Link href="mailto:k.gabriel@o2.pl" className="flex items-center gap-2">
 								<Mail className="h-4 w-4" />
