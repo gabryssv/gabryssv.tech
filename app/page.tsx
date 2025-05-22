@@ -3,7 +3,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ScrollButton } from "@/components/scroll-button"
-import { Mail, ExternalLink, Palette, Zap, Laptop, ChevronRight, User as Discord } from "lucide-react"
+import { Mail, ExternalLink, Palette, Zap, Laptop, ChevronRight } from "lucide-react"
+import { FaDiscord } from "react-icons/fa" // Import Discord icon from react-icons
 import Link from "next/link"
 
 export default function Home() {
@@ -249,7 +250,7 @@ export default function Home() {
 						</Button>
 						<Button variant="outline" asChild>
 							<Link href="https://discord.com/users/1204732596202901515" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-								<Discord className="h-4 w-4" />
+									<FaDiscord className="h-4 w-4" />
 								gabryssv
 							</Link>
 						</Button>
