@@ -108,7 +108,11 @@ export default function Home() {
 									Boty Discord
 								</Button>
 
-								<Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
+									<Button
+									variant="outline"
+									disabled
+									className="bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
+								>
 									Boty Telegram
 								</Button>
 
@@ -116,7 +120,11 @@ export default function Home() {
 									Automatyzacje Instagram
 								</Button>
 
-								<Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
+									<Button
+									variant="outline"
+									disabled
+									className="bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
+								>
 									Automatyzacje Facebook
 								</Button>
 							</div>
