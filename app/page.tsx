@@ -114,7 +114,7 @@ export default function Home() {
 									className="bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
 								>
 									Boty Telegram
-								</Button>
+								</Button>	
 
 								<Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
 									Automatyzacje Instagram
@@ -251,15 +251,9 @@ export default function Home() {
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4">
 						<Button variant="default" asChild>
-							<Link href="mailto:k.gabriel@o2.pl" className="flex items-center gap-2">
+							<Link href="mailto:kossakowski.g@proton.me" className="flex items-center gap-2">
 								<Mail className="h-4 w-4" />
-								k.gabriel@o2.pl
-							</Link>
-						</Button>
-						<Button variant="outline" asChild>
-							<Link href="https://discord.com/users/1204732596202901515" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-									<FaDiscord className="h-4 w-4" />
-								gabryssv
+								kossakowski.g@proton.me
 							</Link>
 						</Button>
 						<Button variant="outline" asChild>
