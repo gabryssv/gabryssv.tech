@@ -257,6 +257,12 @@ export default function Home() {
 							</Link>
 						</Button>
 						<Button variant="outline" asChild>
+							<Link href="https://discord.com/users/822493619276611663" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+									<FaDiscord className="h-4 w-4" />
+								kossakowski.g
+							</Link>
+						</Button>
+						<Button variant="outline" asChild>
 							<Link href="https://x.com/gabryssv" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
 									<FaTwitter className="h-4 w-4" />
 								gabryssv
