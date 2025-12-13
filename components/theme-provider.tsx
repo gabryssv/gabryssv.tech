@@ -24,26 +24,41 @@ const initialState: ThemeProviderState = {
 const ThemeProviderContext = createContext<ThemeProviderState>(initialState)
 
 export function ThemeProvider({ children, defaultTheme = "dark", storageKey = "theme", ...props }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(defaultTheme)
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window === "undefined") return defaultTheme
+    const saved = localStorage.getItem(storageKey) as Theme | null
+    return saved ?? defaultTheme
+  })
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem(storageKey) as Theme | null
-    if (savedTheme) {
-      setTheme(savedTheme)
+    const root = document.documentElement
+    const resolve = (t: Theme) => {
+      if (t === "system") {
+        return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+      }
+      return t
     }
-  }, [storageKey])
 
-  useEffect(() => {
-    const root = window.document.documentElement
+    const apply = (t: Theme) => {
+      const effective = resolve(t)
+      root.classList.remove("light", "dark")
+      root.classList.add(effective)
+    }
 
-    // Remove the old theme class
-    root.classList.remove("light", "dark")
-
-    // Add the new theme class
-    root.classList.add(theme)
-
-    // Save the theme to localStorage
+    // Apply current theme and persist
+    apply(theme)
     localStorage.setItem(storageKey, theme)
+    try {
+      document.cookie = `${storageKey}=${theme}; path=/; max-age=31536000; samesite=lax`
+    } catch {}
+
+    // Listen for system changes when theme is system
+    if (theme === "system") {
+      const media = window.matchMedia("(prefers-color-scheme: dark)")
+      const onChange = () => apply("system")
+      media.addEventListener("change", onChange)
+      return () => media.removeEventListener("change", onChange)
+    }
   }, [theme, storageKey])
 
   const value = {

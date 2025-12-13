@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { useTheme } from "@/components/theme-provider"
 import { useEffect, useState } from "react"
 
-export function ThemeToggle() {
+export function ThemeToggle({ className }: { className?: string }) {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
@@ -15,13 +15,14 @@ export function ThemeToggle() {
   }, [])
 
   if (!mounted) {
-    return <Button variant="outline" size="icon" aria-label="Przełącz motyw" />
+    return <Button variant="ghost" size="icon" className={`border-0 ${className ?? ""}`} aria-label="Przełącz motyw" />
   }
 
   return (
     <Button
-      variant="outline"
+      variant="ghost"
       size="icon"
+      className={`border-0 ${className ?? ""}`}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       aria-label="Przełącz motyw"
     >
