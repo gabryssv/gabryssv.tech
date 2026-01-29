@@ -1,36 +1,17 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
-import { ThemeToggle } from "@/components/theme-toggle"
-import { LanguageToggle } from "@/components/language-toggle"
-import { DockNav } from "@/components/dock-nav"
+import { Navigator } from "@/components/navigator"
 import { ScrollButton } from "@/components/scroll-button"
 import { Mail, ExternalLink, Palette, Zap, Laptop, ChevronRight } from "lucide-react"
+import { BriefForm } from "@/components/brief-form"
 import { FaDiscord, FaTwitter } from "react-icons/fa"
 import Link from "next/link"
 
 export default function HomeEn() {
 	return (
 		<div className="min-h-screen bg-background text-foreground">
-			<header className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
-				<div className="flex items-center gap-3 px-[8px] py-2 rounded-[calc(var(--radius)+8px)] border bg-background/80 backdrop-blur-[80px] shadow-sm">
-					<DockNav />
-					<Separator orientation="vertical" className="h-5" />
-					<Button variant="ghost" size="icon" className="border-0 h-10 w-10" asChild>
-						<Link href="https://x.com/gabryssv" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
-							<FaTwitter className="h-4 w-4" />
-						</Link>
-					</Button>
-					<Button variant="ghost" size="icon" className="border-0 h-10 w-10" asChild>
-						<Link href="mailto:kossakowski.g@proton.me" aria-label="Email">
-							<Mail className="h-4 w-4" />
-						</Link>
-					</Button>
-					<Separator orientation="vertical" className="h-5" />
-					<LanguageToggle className="h-10 w-10" />
-					<ThemeToggle className="h-10 w-10" />
-				</div>
-			</header>
+			<Navigator locale="en" />
 
 			<section id="hero" className="min-h-screen flex items-center justify-center px-6 md:px-16">
 				<div className="mx-auto max-w-3xl w-full">
@@ -118,25 +99,31 @@ export default function HomeEn() {
 									Discord Bots
 								</Button>
 
-								<Button
+								<span role="button" aria-disabled="true" aria-label="Soon" title="Soon">
+									<Button
 									variant="outline"
 									disabled
+									disabledLabel="Soon"
 									className="bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
-								>
-									Telegram Bots
-								</Button>
+									>
+										Telegram Bots
+									</Button>
+								</span>
 
 								<Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
 									Instagram Automations
 								</Button>
 
-								<Button
+								<span role="button" aria-disabled="true" aria-label="Soon" title="Soon">
+									<Button
 									variant="outline"
 									disabled
+									disabledLabel="Soon"
 									className="bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
-								>
-									Facebook Automations
-								</Button>
+									>
+										Facebook Automations
+									</Button>
+								</span>
 							</div>
 						</div>
 
@@ -202,10 +189,11 @@ export default function HomeEn() {
 					<div className="space-x-2 flex">
 						<h2 className="text-4xl md:text-5xl tracking-tight font-semibold">Project <b className="font-almendra">Pricing</b></h2>
 					</div>
-					<div className="bg-secondary/30 p-6 rounded-lg border border-input">
-						<p className="text-muted-foreground">
-							<strong>Every project is priced individually — completely free.</strong> There’s no commitment — just describe your idea. I always try to align the solution with your budget, delivering the best possible result at a reasonable price.
-						</p>
+					<p className="text-muted-foreground">
+						<strong>Every project is priced individually — completely free.</strong> There’s no commitment — just describe your idea. I always try to align the solution with your budget, delivering the best possible result at a reasonable price.
+					</p>
+					<div className="mt-6">
+						<BriefForm locale="en" />
 					</div>
 				</section>
 

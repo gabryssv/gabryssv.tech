@@ -9,27 +9,54 @@ interface ScrollButtonProps extends ButtonProps {
   offset?: number // Optional custom offset
 }
 
-export function ScrollButton({ 
-  targetId, 
-  children, 
+export function ScrollButton({
+  targetId,
+  children,
   offset = 100, // Default offset to account for fixed header
-  ...props 
+  ...props
 }: ScrollButtonProps) {
-  const scrollToSection = () => {
+  const doScroll = () => {
     const element = document.getElementById(targetId)
-    if (element) {
-      const elementPosition = element.getBoundingClientRect().top
-      const offsetPosition = elementPosition + window.pageYOffset - offset
-      
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      })
+    if (!element) return
+
+
+    // If no offset needed, use scrollIntoView for reliability
+    if (offset === 0) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" })
+      return
     }
+
+    const targetTop = element.getBoundingClientRect().top + window.pageYOffset - offset
+    window.requestAnimationFrame(() => {
+      try {
+        window.scrollTo({ top: targetTop, behavior: "smooth" })
+      } catch {
+        // Fallback
+        window.scrollTo(0, targetTop)
+      }
+    })
+  }
+
+  const handleClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    doScroll()
+  }
+
+  const handlePointerDown: React.PointerEventHandler<HTMLButtonElement> = (e) => {
+    // Guard against any parent capturing pointer events
+    e.stopPropagation()
   }
 
   return (
-    <Button onClick={scrollToSection} {...props}>
+    <Button
+      type="button"
+      onClick={handleClick}
+      onPointerDown={handlePointerDown}
+      onMouseDown={handlePointerDown}
+      aria-controls={targetId}
+      {...props}
+    >
       {children}
     </Button>
   )

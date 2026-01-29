@@ -1,36 +1,17 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
-import { ThemeToggle } from "@/components/theme-toggle"
-import { LanguageToggle } from "@/components/language-toggle"
-import { DockNav } from "@/components/dock-nav"
+import { Navigator } from "@/components/navigator"
 import { ScrollButton } from "@/components/scroll-button"
 import { Mail, ExternalLink, Palette, Zap, Laptop, ChevronRight } from "lucide-react"
+import { BriefForm } from "@/components/brief-form"
 import { FaDiscord, FaTwitter } from "react-icons/fa" // Import Discord icon from react-icons
 import Link from "next/link"
 
 export default function Home() {
 	return (
 		<div className="min-h-screen bg-background text-foreground">
-			<header className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
-				<div className="flex items-center gap-3 px-[8px] py-2 rounded-[calc(var(--radius)+8px)] border bg-background/80 backdrop-blur-[80px] shadow-sm">
-					<DockNav />
-					<Separator orientation="vertical" className="h-5" />
-					<Button variant="ghost" size="icon" className="border-0 h-10 w-10" asChild>
-						<Link href="https://x.com/gabryssv" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
-							<FaTwitter className="h-4 w-4" />
-						</Link>
-					</Button>
-					<Button variant="ghost" size="icon" className="border-0 h-10 w-10" asChild>
-						<Link href="mailto:kossakowski.g@proton.me" aria-label="Email">
-							<Mail className="h-4 w-4" />
-						</Link>
-					</Button>
-					<Separator orientation="vertical" className="h-5" />
-					<LanguageToggle className="h-10 w-10" />
-					<ThemeToggle className="h-10 w-10" />
-				</div>
-			</header>
+			<Navigator locale="pl" />
 
 			<section id="hero" className="min-h-screen flex items-center justify-center px-6 md:px-16">
 				<div className="mx-auto max-w-3xl w-full">
@@ -118,25 +99,29 @@ export default function Home() {
 									Boty Discord
 								</Button>
 
+								<span role="button" aria-disabled="true" aria-label="Wkrótce" title="Wkrótce">
 									<Button
 									variant="outline"
 									disabled
 									className="bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
-								>
-									Boty Telegram
-								</Button>	
+									>
+										Boty Telegram
+									</Button>
+								</span>
 
 								<Button variant="outline" className="bg-transparent  py-2 px-4 font-normal cursor-pointer">
 									Automatyzacje Instagram
 								</Button>
 
+								<span role="button" aria-disabled="true" aria-label="Wkrótce" title="Wkrótce">
 									<Button
 									variant="outline"
 									disabled
 									className="bg-transparent py-2 px-4 font-normal opacity-50 cursor-not-allowed"
-								>
-									Automatyzacje Facebook
-								</Button>
+									>
+										Automatyzacje Facebook
+									</Button>
+								</span>
 							</div>
 						</div>
 
@@ -201,18 +186,18 @@ export default function Home() {
 
 				<Separator className="my-12" />
 
-				<section id="project-pricing" className="space-y-6">
+								<section id="project-pricing" className="space-y-6">
 					<div className="space-x-2 flex">
 						<h2 className="text-4xl md:text-5xl tracking-tight font-semibold">Wycena <b className="font-almendra">projektu</b></h2>
 					</div>
-					<div className="bg-secondary/30 p-6 rounded-lg border border-input">
-						<p className="text-muted-foreground">
-							<strong>Każdy projekt wyceniam indywidualnie – całkowicie za darmo.</strong> Nie musisz się
-							zobowiązywać –
-							wystarczy, że opiszesz mi swój pomysł. Zawsze staram się dopasować rozwiązanie do Twojego budżetu,
-							oferując najlepszy możliwy efekt w rozsądnej cenie.
-						</p>
-					</div>
+									<p className="text-muted-foreground">
+										<strong>Każdy projekt wyceniam indywidualnie – całkowicie za darmo.</strong> Nie musisz się
+										zobowiązywać – wystarczy, że opiszesz mi swój pomysł. Zawsze staram się dopasować rozwiązanie do Twojego budżetu,
+										oferując najlepszy możliwy efekt w rozsądnej cenie.
+									</p>
+									<div className="mt-6">
+										<BriefForm locale="pl" />
+									</div>
 				</section>
 
 				<Separator className="my-12" />

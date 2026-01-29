@@ -2,16 +2,16 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react"
 import { ScrollButton } from "@/components/scroll-button"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+// Tooltips removed per request (icon-only buttons)
 import { Home, Info, Wrench, CircleDollarSign, Images, Mail } from "lucide-react"
 
-type Item = {
+export type Item = {
   id: string
   label: string
   icon: (props: { className?: string }) => ReactNode
 }
 
-const items: Item[] = [
+export const dockItems: Item[] = [
   { id: "hero", label: "Start", icon: (p) => <Home {...p} /> },
   { id: "pricing", label: "Przegląd", icon: (p) => <Info {...p} /> },
   { id: "services", label: "Usługi", icon: (p) => <Wrench {...p} /> },
@@ -20,7 +20,16 @@ const items: Item[] = [
   { id: "contact", label: "Kontakt", icon: (p) => <Mail {...p} /> },
 ]
 
-export function DockNav() {
+export const dockItemsEn: Item[] = [
+  { id: "hero", label: "Start", icon: (p) => <Home {...p} /> },
+  { id: "pricing", label: "Overview", icon: (p) => <Info {...p} /> },
+  { id: "services", label: "Services", icon: (p) => <Wrench {...p} /> },
+  { id: "project-pricing", label: "Pricing", icon: (p) => <CircleDollarSign {...p} /> },
+  { id: "portfolio", label: "Portfolio", icon: (p) => <Images {...p} /> },
+  { id: "contact", label: "Contact", icon: (p) => <Mail {...p} /> },
+]
+
+export function DockNav({ items = dockItems }: { items?: Item[] }) {
   const [active, setActive] = useState<string>("hero")
   const containerRef = useRef<HTMLDivElement | null>(null)
   const itemRefs = useRef<Record<string, HTMLDivElement | null>>({})
@@ -94,40 +103,31 @@ export function DockNav() {
   }, [active])
 
   return (
-    <TooltipProvider>
-      <div ref={containerRef} className="relative flex items-center gap-2">
-        {items.map(({ id, label, icon: Icon }) => (
-          <div
-            ref={(el) => {
-              itemRefs.current[id] = el
-            }}
-            key={id}
-            className="relative"
+    <div ref={containerRef} className="relative flex items-center gap-2">
+      {items.map(({ id, label, icon: Icon }) => (
+        <div
+          ref={(el) => {
+            itemRefs.current[id] = el
+          }}
+          key={id}
+          className="relative"
+        >
+          <ScrollButton
+            targetId={id}
+            variant="ghost"
+            size="icon"
+            offset={100}
+            className="border-0 h-10 w-10"
+            aria-label={label}
           >
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <ScrollButton
-                  targetId={id}
-                  variant="ghost"
-                  size="icon"
-                  offset={64}
-                  className="border-0 h-10 w-10"
-                  aria-label={label}
-                >
-                  <Icon className="h-4 w-4" />
-                </ScrollButton>
-              </TooltipTrigger>
-              <TooltipContent side="top">
-                {label}
-              </TooltipContent>
-            </Tooltip>
-          </div>
-        ))}
-        <span
-          className="pointer-events-none absolute top-full h-1 w-1 rounded-full bg-foreground transition-transform duration-300 ease-out"
-          style={{ transform: `translateX(${indicatorX - 2}px)` }}
-        />
-      </div>
-    </TooltipProvider>
+            <Icon className="h-4 w-4" />
+          </ScrollButton>
+        </div>
+      ))}
+      <span
+        className="pointer-events-none absolute top-full h-1 w-1 rounded-full bg-foreground transition-transform duration-300 ease-out"
+        style={{ transform: `translateX(${indicatorX - 2}px)` }}
+      />
+    </div>
   )
 }

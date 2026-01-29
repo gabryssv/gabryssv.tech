@@ -37,11 +37,34 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean
+  disabledLabel?: string
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  ({ className, variant, size, asChild = false, disabledLabel = "Wkrótce", ...props }, ref) => {
     const Comp = asChild ? Slot : "button"
+    const isDisabled = Boolean(props.disabled)
+
+    if (isDisabled) {
+      const id = props.id ?? "button"
+      return (
+        <span className="relative inline-block group">
+          <Comp
+            className={cn(buttonVariants({ variant, size, className }))}
+            ref={ref}
+            {...props}
+          />
+          <span
+            id={`${id}-tooltip`}
+            role="tooltip"
+            className="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-[calc(100%+16px)] select-none rounded-md border border-input bg-black px-2 py-1 text-xs text-white opacity-0 transition-opacity duration-150 group-hover:opacity-100 group-focus-within:opacity-100"
+          >
+            {disabledLabel}
+          </span>
+        </span>
+      )
+    }
+
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}

@@ -27,6 +27,40 @@ const almendra = Almendra({
 export const metadata: Metadata = {
   title: "Gabryś - Automatyzacje i Grafika Komputerowa",
   description: "Profesjonalne automatyzacje i usługi graficzne w przystępnej cenie",
+  metadataBase: new URL("https://gabryssv.tech"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      pl: "/",
+      en: "/en",
+    },
+  },
+  openGraph: {
+    title: "Gabryś - Automatyzacje i Grafika Komputerowa",
+    description: "Profesjonalne automatyzacje i usługi graficzne w przystępnej cenie",
+    url: "https://gabryssv.tech",
+    siteName: "gabryssv.tech",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Gabryś — Automatyzacje i Grafika",
+      },
+    ],
+    locale: "pl_PL",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@gabryssv",
+    title: "Gabryś - Automatyzacje i Grafika Komputerowa",
+    description: "Profesjonalne automatyzacje i usługi graficzne w przystępnej cenie",
+    images: ["/og.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default async function RootLayout({

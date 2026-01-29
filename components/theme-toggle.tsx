@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { useTheme } from "@/components/theme-provider"
 import { useEffect, useState } from "react"
 
-export function ThemeToggle({ className }: { className?: string }) {
+export function ThemeToggle({ className, locale = "pl", noAria = false }: { className?: string; locale?: "pl" | "en"; noAria?: boolean }) {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
@@ -14,8 +14,16 @@ export function ThemeToggle({ className }: { className?: string }) {
     setMounted(true)
   }, [])
 
+  const aria = locale === "en" ? "Toggle theme" : "Przełącz motyw"
   if (!mounted) {
-    return <Button variant="ghost" size="icon" className={`border-0 ${className ?? ""}`} aria-label="Przełącz motyw" />
+    return (
+      <Button
+        variant="ghost"
+        size="icon"
+        className={`border-0 ${className ?? ""}`}
+        {...(noAria ? {} : { "aria-label": aria })}
+      />
+    )
   }
 
   return (
@@ -24,9 +32,9 @@ export function ThemeToggle({ className }: { className?: string }) {
       size="icon"
       className={`border-0 ${className ?? ""}`}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      aria-label="Przełącz motyw"
+      {...(noAria ? {} : { "aria-label": aria })}
     >
-      {theme === "dark" ? <Sun className="h-[1.2rem] w-[1.2rem]" /> : <Moon className="h-[1.2rem] w-[1.2rem]" />}
+      {theme === "dark" ? <Moon className="h-[1.2rem] w-[1.2rem]" /> : <Sun className="h-[1.2rem] w-[1.2rem]" />}
     </Button>
   )
 }
